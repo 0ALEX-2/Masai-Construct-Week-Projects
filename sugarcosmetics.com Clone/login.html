@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="search_and_nav_bar.css">
+    <link rel="stylesheet" href="footer.css">
+    <title>Login page</title>
+   
+    <style>
+         body{
+        background-color: rgb(231, 225, 225);
+        margin: 0px;
+        padding: 0px;
+        font-family: Poppins;
+    }
+       #loginForm>input{
+            display: block;
+            padding: 5px;
+            margin: auto;
+        }
+        #loginForm{
+            background-color: blanchedalmond;
+            width: 20%;
+            padding: 30px;
+            margin-left: 40%;
+           
+        }
+        #login{
+            padding-top: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="searchBar">
+            <div>
+                <a href="index.html"><img src="https://in.sugarcosmetics.com/desc-images/pride-logo-option-white.gif"/></a>
+            </div>
+            <div>
+               <input type="text" placeholder="Try ''Liquide Lipstick''">
+               <button>Search</button>
+            </div>
+            <div>
+               <a href="signup.html">Signup</a> / <a href="login.html">Login</a>
+            </div>
+            <div>
+               <a href="">Wish List</a>
+               <a href="">Cart</a>
+               <a href="">Offers</a>
+            </div>
+           </div>
+           <!-- <div id="navBar">
+               <a href="makeup.html">MAKEUP</a>
+               <a href="brushes.html">BRUSHES</a>
+               <a href="skincare.html">SKINCARE</a>
+               <a href="">TRENDING</a>
+               <a href="">BLOG</a>
+               <a href="offers.html">OFFERS</a>
+               <a href="">STORES</a>
+           </div> -->
+    </div>
+    <div id="login">
+    <form id="loginForm">
+        <input id="email" type="email" placeholder="Enter your email id">
+        <input id="password" type="number" placeholder="Enter your password">
+        <input type="submit" value="Login">
+    </form>
+</div>
+    <!-- Footer Part -->
+    <div id="footer">
+        <div>
+            <div>
+            <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+            
+                <input type="text" placeholder="Your email address">
+                <button>SIGN UP</button>
+            </div>
+            <div id="playstore">
+                <H2>GET THE NEW SUGAR APP TODAY.</H2>
+                <div>
+                <div><p> Tap into a better <br> shopping experience.</p></div>
+                <div >
+                <a href="https://sugarcosmetics.app.link/WebFApp"><img src="https://in.sugarcosmetics.com/playstore.png" alt=""></a></div>
+                <a href="https://sugarcosmetics.app.link/WebFApp"><img src="https://in.sugarcosmetics.com/apple-store.png
+                " alt=""></a>     
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <div id="information">
+        <h2>INFORMATION</h2>
+        <a href="https://in.sugarcosmetics.com/stores">Stores</a>
+        <a href="https://in.sugarcosmetics.com/pages/terms-conditions">Rerms & Conditions</a>
+        <a href="https://in.sugarcosmetics.com/pages/returns-refunds">Returns</a>
+        <a href="https://in.sugarcosmetics.com/pages/faqs">FAQs</a>
+        <a href="https://in.sugarcosmetics.com/pages/about-us">About Us</a>
+    </div>
+
+    </div>                                  
+</body>
+</html>
+<script>
+    
+
+    var form=document.querySelector("form")
+    var userData=JSON.parse(localStorage.getItem("signupDataLS"))|| []
+    form.addEventListener("submit",function(){
+        event.preventDefault()
+        var loginObject={
+            email:form.email.value,
+            password:form.password.value
+        }
+        if(checkLogin(loginObject.email,loginObject.password)===true){
+            localStorage.setItem("login",JSON.stringify(loginObject))
+            alert("Login Successful.")
+            window.location.href="index.html"
+        }
+        else{
+            alert("Wrong User Id or Password")
+        }
+    })
+function checkLogin(email,password){
+    var filter=userData.filter(function(element){
+        return element.email ===email && element.password === password
+    })
+    if(filter.length>0){
+        return true
+    }
+    else{
+        return false
+    }
+}
+</script>

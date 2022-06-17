@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="search_and_nav_bar.css">
+    <link rel="stylesheet" href="footer.css">
+    <title>Cart Page</title>
+    <style>
+        #header{
+           
+        }
+        #cont{
+            padding-top: 150px;
+            
+        }
+        #cont>h1{
+            text-align: center;
+            color: grey;
+        }
+        #products{
+            display: flex;
+            /* border: 1px solid red; */
+            width: 50%;
+            justify-content: space-between;
+            /* margin-top: 150px; */
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            margin-top: 10px;
+        }
+        #productName{
+            /* border: 1px solid black; */
+            display: flex;
+            align-items: center;
+            width: 30%;
+            
+        }
+        #productImage>img{
+          width: 100%;
+          height: 150px;
+          
+        }
+        #pricing{
+            display: flex;
+            width: 45%;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #pricing>h3{
+            cursor: pointer;
+        }
+        .cal{
+            background-color: black;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="searchBar">
+            <div>
+               <a href="index.html"><img src="https://in.sugarcosmetics.com/desc-images/pride-logo-option-white.gif"/></a>
+            </div>
+            <div>
+               <input type="text" placeholder="Try ''Liquide Lipstick''">
+               <button>Search</button>
+            </div>
+            <div>
+                <a href="signup.html">Signup</a> / <a href="login.html">Login</a>
+            </div>
+            <div>
+               <a href="">Wish List</a>
+               <a href="cart.html">Cart</a>
+               <a href="">Offers</a>
+            </div>
+           </div>
+           <div id="navBar">
+            <a href="makeup.html">MAKEUP</a>
+            <a href="brushes.html">BRUSHES</a>
+            <a href="skincare.html">SKINCARE</a>
+            <a href="makeup.html">TRENDING</a>
+            <a href="https://blog.sugarcosmetics.com/">BLOG</a>
+            <a href="offers.html">OFFERS</a>
+            <a href="https://in.sugarcosmetics.com/stores">STORES</a>
+           </div>
+    </div>
+    <div id="cont">
+        <h1>ADD TO CART PAGE</h1>
+   
+        <!-- <div id="productImage">
+            <img src="https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-006Highlighter.jpg?v=1627660002"/>
+        </div>
+        <div id="productName">
+            <h3>jhfhsd dkfksdhf kdhfk sdgjsa jsghkdjash</h3>
+        </div>
+        <div id="pricing">
+         <h3>Delete</h3>
+         <div class="cal">-</div>
+         <p>0</p>
+         <div class="cal">+</div>
+         <p>1*399=399</p>
+        </div> -->
+                                            <!-- Footer Part -->
+    <div id="footer">
+        <div>
+           <div>
+            <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+            
+                <input type="text" placeholder="Your email address">
+                <button>SIGN UP</button>
+            </div>
+            <div id="playstore">
+              <H2>GET THE NEW SUGAR APP TODAY.</H2>
+              <div>
+              <div><p> Tap into a better <br> shopping experience.</p></div>
+              <div >
+               <a href="https://sugarcosmetics.app.link/WebFApp"><img src="https://in.sugarcosmetics.com/playstore.png" alt=""></a></div>
+               <a href="https://sugarcosmetics.app.link/WebFApp"><img src="https://in.sugarcosmetics.com/apple-store.png
+                " alt=""></a>     
+            </div>
+        </div>
+        </div>
+    </div>
+   
+    <div id="information">
+        <h2>INFORMATION</h2>
+        <a href="https://in.sugarcosmetics.com/stores">Stores</a>
+        <a href="https://in.sugarcosmetics.com/pages/terms-conditions">Rerms & Conditions</a>
+        <a href="https://in.sugarcosmetics.com/pages/returns-refunds">Returns</a>
+        <a href="https://in.sugarcosmetics.com/pages/faqs">FAQs</a>
+        <a href="https://in.sugarcosmetics.com/pages/about-us">About Us</a>
+    </div>
+
+    </div>                                  
+   
+</div>
+</body>
+</html>
+<script>
+     var loginInfo=JSON.parse(localStorage.getItem("login"))
+    
+    document.querySelector("#searchBar>div:nth-child(3)").innerText=loginInfo.email
+   console.log(loginInfo.email)
+
+ 
+var cartData=JSON.parse(localStorage.getItem("cart"))||[];
+
+
+cartData.forEach(function(element){
+   
+    var products=document.createElement("div")
+    products.setAttribute("id","products")
+    var productImage=document.createElement("div")
+    productImage.setAttribute("id","productImage")
+    var image=document.createElement("img")
+    image.setAttribute("src",element.productImage)
+
+    var productName=document.createElement("div")
+    productName.setAttribute("id","productName")
+    productName.innerText=element.productName
+
+    var pricing=document.createElement("div")
+    pricing.setAttribute("id","pricing")
+    var dlt=document.createElement("h3")
+    dlt.innerText="Delete"
+
+    var minus=document.createElement("div")
+    minus.setAttribute("class","cal")
+    minus.innerText="-"
+    minus.addEventListener("click",function(){
+        minusFun(element)
+    })
+
+    var result=document.createElement("p")
+    result.setAttribute("id","result")
+    
+   
+
+    var plus=document.createElement("div")
+    plus.setAttribute("class","cal")
+    plus.innerText="+"
+    plus.addEventListener("click",function(){
+        plusFun(element)
+    })
+
+
+
+
+productImage.append(image)
+pricing.append(dlt,minus,result,plus)
+products.append(productImage,productName,pricing)
+document.querySelector("#cont").append(products)
+
+
+})
+var counter=JSON.parse(localStorage.getItem("localCounter"))||0
+document.querySelector("#result").innerText=counter
+function minusFun(element){
+    if(counter>0){
+        counter--
+    }
+document.querySelector("#result").innerText=counter
+localStorage.setItem("localCounter")
+}
+function plusFun(element){
+    counter++
+    document.querySelector("#result").innerText=counter
+    localStorage.setItem("localCounter")
+}
+
+</script>

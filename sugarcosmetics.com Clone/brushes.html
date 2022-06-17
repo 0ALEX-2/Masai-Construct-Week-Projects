@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brushes page</title>
+    <link rel="stylesheet" href="search_and_nav_bar.css">
+    <link rel="stylesheet" href="footer.css">
+    <style>
+        
+        body{
+        background-color: rgb(231, 225, 225);
+    }
+     #banner>img{
+        height: 300px;
+        width: 100%;
+        padding-top: 150px;
+     }
+     #products{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 20px;
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+     }
+     #box>a>img{
+        width: 100%;
+        height: 230px;
+     }
+     #box{
+        background-color: white;
+    
+     }
+     #box:hover{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+       
+     }
+     #info{
+        /* border: 1px solid red; */
+        height: 125px;
+        text-align: center;
+        line-height: 20px;
+     }
+     #info>p{
+      padding-top: 10px;
+      color: rgb(24, 22, 22);
+     }
+     #buy{
+        background-color: black;
+       
+     }
+     #buy>div>button:nth-child(2){
+        padding: 8px;
+        background-color: black;
+        color: white;
+        width: 68%;
+        cursor: pointer;
+     }
+     #buy>div>button:nth-child(1){
+        padding: 8px;
+        width: 32%;
+        cursor: pointer;
+       
+     }
+      /* meidum screens */
+			@media all and (min-width: 768px) and (max-width: 1024px) {
+        #products{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+      }
+    }
+      	/* small screens */
+          @media all and (min-width: 320px) and (max-width: 767px) {
+        #products{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+      }
+    }
+
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="searchBar">
+            <div>
+               <a href="index.html"><img src="https://in.sugarcosmetics.com/desc-images/pride-logo-option-white.gif"/></a>
+            </div>
+            <div>
+               <input type="text" placeholder="Try ''Liquide Lipstick''">
+               <button>Search</button>
+            </div>
+            <div>
+                <a href="signup.html">Signup</a> / <a href="login.html">Login</a>
+            </div>
+            <div>
+               <a href="">Wish List</a>
+               <a href="cart.html">Cart</a>
+               <a href="">Offers</a>
+            </div>
+           </div>
+           <div id="navBar">
+            <a href="makeup.html">MAKEUP</a>
+            <a href="brushes.html">BRUSHES</a>
+            <a href="skincare.html">SKINCARE</a>
+            <a href="makeup.html">TRENDING</a>
+            <a href="https://blog.sugarcosmetics.com/">BLOG</a>
+            <a href="offers.html">OFFERS</a>
+            <a href="https://in.sugarcosmetics.com/stores">STORES</a>
+           </div>
+    </div>
+    <div id="banner">
+        <img src="https://d32baadbbpueqt.cloudfront.net/Collection/39da2bc6-d83c-4350-a2b1-0c0ec7a721a8.jpg">
+    </div>
+    <div id="products">
+
+    </div>
+    <!-- Footer Part -->
+    <div id="footer">
+        <div>
+        <div>
+            <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+            
+                <input type="text" placeholder="Your email address">
+                <button>SIGN UP</button>
+            </div>
+            <div id="playstore">
+            <H2>GET THE NEW SUGAR APP TODAY.</H2>
+            <div>
+            <div><p> Tap into a better <br> shopping experience.</p></div>
+            <div >
+            <a href="https://sugarcosmetics.app.link/WebFApp"><img src="https://in.sugarcosmetics.com/playstore.png" alt=""></a></div>
+            <a href="https://sugarcosmetics.app.link/WebFApp"><img src="https://in.sugarcosmetics.com/apple-store.png
+                " alt=""></a>     
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div id="information">
+        <h2>INFORMATION</h2>
+        <a href="https://in.sugarcosmetics.com/stores">Stores</a>
+        <a href="https://in.sugarcosmetics.com/pages/terms-conditions">Rerms & Conditions</a>
+        <a href="https://in.sugarcosmetics.com/pages/returns-refunds">Returns</a>
+        <a href="https://in.sugarcosmetics.com/pages/faqs">FAQs</a>
+        <a href="https://in.sugarcosmetics.com/pages/about-us">About Us</a>
+    </div>
+
+    </div>                                  
+</body>
+</html>
+<script>
+    
+
+    var brushesData=[
+        {
+        productImage:"https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-003Contour.jpg?v=1627659996",
+        productName:"BLEND TREND FACE BRUSH-003 CONTOUR",
+        price:399,
+        rating:4.5, 
+        link:"",
+    },
+    {
+        productImage:"https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-14_1.jpg?v=1627659982",
+        productName:"BLEND TREND EYESHADOW BRUSH-043 ROUND XL",
+        price:399,
+        rating:4.8, 
+    },
+    {
+        productImage:"https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-3-min.jpg?v=1627573657",
+        productName:"BLEND TREND EYESHADOW BRUSH-042 ROUND",
+        price:399,
+        rating:4.5, 
+    },
+    {
+        productImage:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_1.jpg?v=1630683833",
+        productName:"EYES & FACE COMBO",
+        price:649,
+        rating:4.5, 
+    },
+    {
+        productImage:"https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-006Highlighter.jpg?v=1627660002",
+        productName:"BLEND TREND FACE BRUSH-006 HIGHLIGHTER",
+        price:399,
+        rating:4.7, 
+    },
+    {
+        productImage:"https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-13.jpg?v=1627659977",
+        productName:"BLEND TREND DUAL EYESHADOW BRUSH-413 FLAT+ROUND XL",
+        price:599,
+        rating:5, 
+    },
+    {
+        productImage:"https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-2-min.jpg?v=1627573652",
+        productName:"BLEND TREND EYESHADOW BRUSH-041 FLAT",
+        price:399,
+        rating:5, 
+    },
+    {
+        productImage:"https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-001Blush.jpg?v=1627659984",
+        productName:"BLEND TREND FACE BRUSH-001 BLUSH",
+        price:399,
+        rating:4.9, 
+    },
+    {
+        productImage:"https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-5-min.jpg?v=1627573639",
+        productName:"BLEND TREND DUAL EYESHADOW BRUSH-412 FLAT+ROUND",
+        price:599,
+        rating:5, 
+    },
+    {
+        productImage:"https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-12-min.jpg?v=1627573647",
+        productName:"BLEND TREND DUAL FACE BRUSH-075 POWDER+FOUNDATION",
+        price:599,
+        rating:4.8, 
+    },
+    {
+        productImage:"https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFoundationBrush-052Kabuki.jpg?v=1627573664",
+        productName:"BLEND TREND FOUNDATION BRUSH-052 KABUKI",
+        price:399,
+        rating:4.8, 
+    },
+    {
+        productImage:"https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-007Powder.jpg?v=1627660008",
+        productName:"BLEND TREND FACE BRUSH-007 POWDER",
+        price:399,
+        rating:4.9, 
+    },
+    {
+        productImage:"https://cdn.shopify.com/s/files/1/0906/2558/products/BeginnersEssentialsCombo3-WBGimages.jpg?v=1630683820",
+        productName:"FACE ESSENTIALS COMBO",
+        price:1499,
+        rating:5, 
+    },
+    // {
+    //     productImage:"",
+    //     productName:"",
+    //     price:"",
+    //     rating:"", 
+    // },
+    ]
+    var cartData=JSON.parse(localStorage.getItem("cart"))||[];
+    brushesData.forEach(function(elem){
+    var box=document.createElement("div")
+    box.setAttribute("id","box")
+    var image=document.createElement("img")
+    image.setAttribute("src",elem.productImage)
+    var name=document.createElement("h4")
+    name.innerText=elem.productName
+    var price=document.createElement("p")
+    price.innerText="Rs."+" "+elem.price
+    var rating=document.createElement("p")
+    rating.innerText="Rating-"+" "+elem.rating
+    var cart=document.createElement("button")
+    cart.innerText="ADD TO CART"
+    cart.addEventListener("click",function(){
+        addToCart(elem);
+    })
+
+    var wishList=document.createElement("button")
+    wishList.innerText="Wish List"
+    var btnBox=document.createElement("div")
+    var upperBox=document.createElement("div")
+    upperBox.setAttribute("id","info")
+    var lowerBox=document.createElement("div")
+    lowerBox.setAttribute("id","buy")
+    var link=document.createElement("a")
+    link.setAttribute("href",elem.link)
+
+    
+    btnBox.append(wishList,cart)
+    lowerBox.append(btnBox)
+    upperBox.append(name,price,rating)
+    link.append(image)
+    box.append(link,upperBox,lowerBox)
+    
+    document.querySelector("#products").append(box)
+})
+function addToCart(elem){
+cartData.push(elem)
+localStorage.setItem("cart",JSON.stringify(cartData))
+alert("Product added to the Cart !")
+}
+var loginInfo=JSON.parse(localStorage.getItem("login"))
+    
+    document.querySelector("#searchBar>div:nth-child(3)").innerText=loginInfo.email
+   console.log(loginInfo.email)
+</script>

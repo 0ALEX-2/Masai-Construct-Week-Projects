@@ -1,0 +1,45 @@
+#footer{
+    margin-top: 30px;
+    background-color: black;
+    color: white;
+    padding-top: 20px;
+   }
+   #footer>div{
+    display: flex;
+    justify-content: space-evenly;
+   }
+   #playstore>div{
+    display: flex;
+   }
+   #playstore>div>img,img{
+    height: 30px;
+   }
+   #footer p{
+    font-size: 20px;
+    color: rgb(87, 79, 79);
+   }
+   #information{
+    padding-left: 12%;
+    background-color: black;
+    color: white;
+   }
+   #information>a{
+     font-size: 20px;
+     text-decoration: none;
+     margin-right: 50px;
+     color: rgb(87, 79, 79);
+   }
+   #foot{
+    padding: 8px;
+    text-align: justify;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: black;
+   }
+   #foot~button{
+    padding: 8px;
+    background-color: rgb(218, 54, 109);
+    border: none;
+    border-bottom: 3px solid rgb(218, 54, 109);
+    border-radius: 5px;
+   }

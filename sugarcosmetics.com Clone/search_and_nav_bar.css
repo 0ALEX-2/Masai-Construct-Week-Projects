@@ -1,0 +1,85 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#header{
+    position: fixed;
+    background-color:rgb(231, 225, 225) ;
+    margin-top: 0px
+}
+
+#searchBar{
+    
+    display: flex;
+    background-color: rgb(231, 225, 225);
+    align-items: center;
+    /* height: 60px; */
+    font-size: 17px;
+    padding: 10px;
+}
+#searchBar>div:first-child{
+    width: 15%;
+}
+#searchBar>div:first-child>a>img{
+    width: 100%;
+    height: 100%;
+    /* background-color: black; */
+}
+#searchBar>div:first-child>img{
+    width: 100%;
+    height: 100%;
+    /* background-color: black; */
+}
+#searchBar>div:nth-child(2){
+    width: 70%;
+}
+#searchBar>div:nth-child(2)>input{
+    padding: 8px;
+    width: 60%;
+    margin-left: 10%;
+    border-radius: 10px 0px 0px 10px;
+    border: none;
+}
+#searchBar>div:nth-child(2)>button{
+    padding: 5px;
+    color: white;
+    background-color: rgb(26, 24, 24);
+    width: 15%;
+    font-size: 18px;
+    border-radius: 0px 10px 10px 0px;
+    border: none;
+    cursor: pointer;
+}
+#searchBar>div:nth-child(3){
+    width: 17%;
+}
+#searchBar>div:nth-child(3)>a{
+    text-decoration: underline;
+    color: black;
+}
+
+#searchBar>div:nth-child(4){
+    width: 20%;
+    text-align: right;
+}
+#searchBar>div:nth-child(4)>a{
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+#navBar{
+   
+    margin-top: 20px;
+    background-color:white ;
+    padding: 20px;
+}
+#navBar>a{
+    margin-left: 15px;
+    text-decoration: none;
+    color: rgb(107, 100, 100);
+    font-weight: bolder;
+    font-size: 16px;
+}
+#navBar>a:hover{
+    color:rgb(27, 24, 24) ;
+}

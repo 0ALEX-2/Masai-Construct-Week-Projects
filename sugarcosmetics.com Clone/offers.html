@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offer page</title>
+    <link rel="stylesheet" href="search_and_nav_bar.css">
+    <link rel="stylesheet" href="footer.css">
+    <style>
+       
+        body{
+        background-color: rgb(231, 225, 225);
+    }
+        #offerss{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+           
+            width: 95%;
+            margin: auto;
+        }
+        #tag{
+            padding-top: 160px;
+            text-align: center;
+            font-size: 40px;
+            padding-bottom: 20px;
+            color: rgb(88, 84, 84);
+            font-weight: lighter;
+        }
+        #offerss>div{
+           height: 250px; 
+        }
+        #offerss>div>a>img{
+            width: 100%;
+            border-radius: 10px;
+            height: 250px;
+        }
+          /* meidum screens */
+			@media all and (min-width: 768px) and (max-width: 1024px) {
+            #offerss{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 20px;
+           
+            width: 95%;
+            margin: auto;
+        }
+    }
+      	/* small screens */
+          @media all and (min-width: 320px) and (max-width: 767px) {
+            #offerss{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            gap: 20px;
+           
+            width: 95%;
+            margin: auto;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="searchBar">
+            <div>
+               <a href="index.html"><img src="https://in.sugarcosmetics.com/desc-images/pride-logo-option-white.gif"/></a>
+            </div>
+            <div>
+               <input type="text" placeholder="Try ''Liquide Lipstick''">
+               <button>Search</button>
+            </div>
+            <div>
+                <a href="signup.html">Signup</a> / <a href="login.html">Login</a>
+            </div>
+            <div>
+               <a href="">Wish List</a>
+               <a href="cart.html">Cart</a>
+               <a href="offers.html">Offers</a>
+            </div>
+           </div>
+           <div id="navBar">
+            <a href="makeup.html">MAKEUP</a>
+            <a href="brushes.html">BRUSHES</a>
+            <a href="skincare.html">SKINCARE</a>
+            <a href="makeup.html">TRENDING</a>
+            <a href="https://blog.sugarcosmetics.com/">BLOG</a>
+            <a href="offers.html">OFFERS</a>
+            <a href="https://in.sugarcosmetics.com/stores">STORES</a>
+           </div>
+    </div>
+     
+    <p id="tag">General Offers</p>
+    <div id="offerss">
+       <div>
+        <a href="https://in.sugarcosmetics.com/collections/mattely-in-love"><img src="https://d32baadbbpueqt.cloudfront.net/0bb92e9c-97ca-453c-ad4e-c0ae8c9a0678.jpg" alt=""></a>
+       </div>
+       <div>
+        <a href=""><img src="https://d32baadbbpueqt.cloudfront.net/Promotion/479caa48-4f60-42de-84a7-d23b6c244f82.jpg" alt=""></a>
+       </div>
+       <div>
+        <a href=""><img src="https://d32baadbbpueqt.cloudfront.net/Promotion/eb7f9151-3f06-452c-bb2d-7ebd336bf603.jpg" alt=""></a>
+       </div>
+       <div>
+        <a href=""><img src="https://d32baadbbpueqt.cloudfront.net/Promotion/4f57f7f3-1af0-4d93-bebf-05fabd36ba0a.jpg" alt=""></a>
+       </div>
+       <div>
+        <a href=""><img src="https://d32baadbbpueqt.cloudfront.net/Promotion/11e748f5-43a4-43d8-8165-48bc86859441.jpg" alt=""></a>
+       </div>
+       <div>
+        <a href=""><img src="https://d32baadbbpueqt.cloudfront.net/Promotion/16ec57e3-c0e0-4ac2-8eed-26dc9a2c5aa5.jpg" alt=""></a>
+       </div>
+       <div>
+        <a href=""><img src="https://d32baadbbpueqt.cloudfront.net/Promotion/835392ea-a7f1-457c-ab6e-4bf22ca74594.jpg" alt=""></a>
+       </div>
+       <div>
+        <a href=""><img src="https://d32baadbbpueqt.cloudfront.net/d88bf139-fc6c-42fc-bb87-36981e06acee.jpg" alt=""></a>
+       </div>
+    </div>
+                                        <!-- Footer Part -->
+<div id="footer">
+    <div>
+        <div>
+        <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+        
+            <input type="text" placeholder="Your email address" id="foot">
+            <button>SIGN UP</button>
+        </div>
+        <div id="playstore">
+            <H2>GET THE NEW SUGAR APP TODAY.</H2>
+            <div> 
+            <div><p> Tap into a better <br> shopping experience.</p></div>
+            <div >
+            <a href="https://sugarcosmetics.app.link/WebFApp"><img src="https://in.sugarcosmetics.com/playstore.png" alt=""></a></div>
+            <a href="https://sugarcosmetics.app.link/WebFApp"><img src="https://in.sugarcosmetics.com/apple-store.png
+            " alt=""></a>     
+        </div>
+    </div>
+    </div>
+</div>
+
+<div id="information">
+    <h2>INFORMATION</h2>
+    <a href="https://in.sugarcosmetics.com/stores">Stores</a>
+    <a href="https://in.sugarcosmetics.com/pages/terms-conditions">Rerms & Conditions</a>
+    <a href="https://in.sugarcosmetics.com/pages/returns-refunds">Returns</a>
+    <a href="https://in.sugarcosmetics.com/pages/faqs">FAQs</a>
+    <a href="https://in.sugarcosmetics.com/pages/about-us">About Us</a>
+</div>
+
+</div>                               
+</body>
+</html>
+<script>
+     var loginInfo=JSON.parse(localStorage.getItem("login"))
+    
+    document.querySelector("#searchBar>div:nth-child(3)").innerText=loginInfo.email
+   console.log(loginInfo.email)
+</script>

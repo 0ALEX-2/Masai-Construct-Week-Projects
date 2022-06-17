@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makeup page</title>
+    <link rel="stylesheet" href="search_and_nav_bar.css">
+    <link rel="stylesheet" href="footer.css">
+    <style>
+        body{
+        background-color: rgb(231, 225, 225);
+    }
+     #banner>img{
+        height: 300px;
+        width: 100%;
+        padding-top: 150px;
+     }
+     #products{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 20px;
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+     }
+     #box>a>img{
+        width: 100%;
+        height: 230px;
+     }
+     #box{
+        background-color: white;
+    
+     }
+     #box:hover{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+       
+     }
+     #info{
+        /* border: 1px solid red; */
+        height: 125px;
+        text-align: center;
+        line-height: 20px;
+     }
+     #info>p{
+      padding-top: 10px;
+      color: rgb(24, 22, 22);
+     }
+     #buy{
+        background-color: black;
+       
+     }
+     #buy>div>button:nth-child(2){
+        padding: 8px;
+        background-color: black;
+        color: white;
+        width: 68%;
+        cursor: pointer;
+     }
+     #buy>div>button:nth-child(1){
+        padding: 8px;
+        width: 32%;
+        cursor: pointer;
+       
+     }
+    /* meidum screens */
+			@media all and (min-width: 768px) and (max-width: 1024px) {
+        #products{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+      }
+    }
+      	/* small screens */
+          @media all and (min-width: 320px) and (max-width: 767px) {
+        #products{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+      }
+    }
+    
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="searchBar">
+            <div>
+               <a href="index.html"><img src="https://in.sugarcosmetics.com/desc-images/pride-logo-option-white.gif"/></a>
+            </div>
+            <div>
+               <input type="text" placeholder="Try ''Liquide Lipstick''">
+               <button>Search</button>
+            </div>
+            <div>
+                <a href="signup.html">Signup</a> / <a href="login.html">Login</a>
+            </div>
+            <div>
+               <a href="">Wish List</a>
+               <a href="cart.html">Cart</a>
+               <a href="">Offers</a>
+            </div>
+           </div>
+           <div id="navBar">
+            <a href="makeup.html">MAKEUP</a>
+            <a href="brushes.html">BRUSHES</a>
+            <a href="skincare.html">SKINCARE</a>
+            <a href="makeup.html">TRENDING</a>
+            <a href="https://blog.sugarcosmetics.com/">BLOG</a>
+            <a href="offers.html">OFFERS</a>
+            <a href="https://in.sugarcosmetics.com/stores">STORES</a>
+           </div>
+    </div>
+    <div id="banner">
+        <img src="https://d32baadbbpueqt.cloudfront.net/Collection/6a68d77f-80b5-4860-9a4d-6005844c937d.jpg" alt="">
+    </div>
+    <div id="products">
+
+    </div>
+                                                            <!-- Footer Part -->
+<div id="footer">
+    <div>
+        <div>
+        <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+        
+            <input type="text" placeholder="Your email address" id="foot">
+            <button>SIGN UP</button>
+        </div>
+        <div id="playstore">
+            <H2>GET THE NEW SUGAR APP TODAY.</H2>
+            <div>
+            <div><p> Tap into a better <br> shopping experience.</p></div>
+            <div >
+            <a href="https://sugarcosmetics.app.link/WebFApp"><img src="https://in.sugarcosmetics.com/playstore.png" alt=""></a></div>
+            <a href="https://sugarcosmetics.app.link/WebFApp"><img src="https://in.sugarcosmetics.com/apple-store.png
+            " alt=""></a>     
+        </div>
+    </div>
+    </div>
+</div>
+
+<div id="information">
+    <h2>INFORMATION</h2>
+    <a href="https://in.sugarcosmetics.com/stores">Stores</a>
+    <a href="https://in.sugarcosmetics.com/pages/terms-conditions">Rerms & Conditions</a>
+    <a href="https://in.sugarcosmetics.com/pages/returns-refunds">Returns</a>
+    <a href="https://in.sugarcosmetics.com/pages/faqs">FAQs</a>
+    <a href="https://in.sugarcosmetics.com/pages/about-us">About Us</a>
+</div>
+
+</div>                                  
+</body>
+</html>
+<script>
+
+
+var makeupData=[
+{
+        productImage:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_6f55bcac-3e42-4253-88ee-cec0fa43c62a.jpg?v=1645608270",
+        productName:"MATTE ATTACK TRANSFERPROOF LIPSTICK",
+        price:699,
+        rating:4.7, 
+        link:"https://in.sugarcosmetics.com/products/matte-attack-transferproof-lipstick"
+    },
+    {
+        productImage:"https://cdn.shopify.com/s/files/1/0906/2558/products/AirKissPowderPoweredByImagesArtboard1.jpg?v=1644813116",
+        productName:"AIR KISS POWDER LIPSTICK",
+        price:499,
+        rating:4.7, 
+    },
+    {
+        productImage:"https://cdn.shopify.com/s/files/1/0906/2558/products/01_d6ffec78-c2b6-4466-8672-233fee0285a8.jpg?v=1644394232",
+        productName:"MATTE AS HELL CRAYON LIPSTICK",
+        price:799,
+        rating:4.8, 
+    },
+    {
+        productImage:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_529c20ee-c872-4029-9702-8580d7b9a66f.jpg?v=1640178644",
+        productName:"ACE OF FOUNDATION STICK",
+        price:999,
+        rating:4.8, 
+    },
+    {
+        productImage:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_1da9dee5-9c2e-4135-994c-9b7d2ca23e6b.jpg?v=1641915296",
+        productName:"NOTHING ELSE MATTER LONGWEAR LIPSTIC",
+        price:499,
+        rating:4.7, 
+    },
+    {
+        productImage:"https://cdn.shopify.com/s/files/1/0906/2558/products/01_5e8187e3-f7a2-40aa-a759-d4bf69769234.jpg?v=1639496327",
+        productName:"KOHL OF HONOUR INTENSE KAJAL-01 BLACK OUT(BLACK)",
+        price:249,
+        rating:4.8, 
+    },
+    {
+        productImage:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_ef579f2e-602e-4d2f-bed2-bf0efdf4f184.jpg?v=1644325813",
+        productName:"SMUDGE ME NOT LIQUID LIPSTICK",
+        price:499,
+        rating:4.8, 
+    },
+    {
+        productImage:"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-bling-leader-illuminating-moisturizer-13644982681683.jpg?v=1619115847",
+        productName:"BLING LEADER ILLUMINATING MOISTURIZER",
+        price:499,
+        rating:4.7, 
+    },
+    {
+        productImage:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_51afaa84-af89-42b5-bdb8-a51b01257bc0.jpg?v=1639582607",
+        productName:"CONTOUR DE FORCE FACE PALETTE",
+        price:799,
+        rating:4.7, 
+    },
+    {
+        productImage:"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-contour-de-force-mini-bronzer-01-taupe-topper-cool-toned-brown-gray-undertone-11020228624467.jpg?v=1619102678",
+        productName:"CONTOUR DE FORCE MINI BRONZER",
+        price:399,
+        rating:4.7, 
+    },
+    {
+        productImage:"https://cdn.shopify.com/s/files/1/0906/2558/products/01_59809bd6-49ef-4c6b-b262-47002bedc963.jpg?v=1639755559",
+        productName:"BLEND THE RULES EYESHADOW PALETTE",
+        price:1199,
+        rating:4.8, 
+    },
+    {
+        productImage:"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-contour-de-force-mini-blush-01-peach-peak-soft-peach-pink-11020203884627.jpg?v=1619102626",
+        productName:"CONTOUR DE FORCE MINI BLUSH",
+        price:349,
+        rating:4.8, 
+    },
+    {
+        productImage:"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-mettle-satin-lipstick-01-sophie-bright-fuchsia-pink-fuchsia-13706258088019.jpg?v=1619116113",
+        productName:"METTLE SATIN LIPSTICK",
+        price:999,
+        rating:4.8, 
+    },
+    {
+        productImage:"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-dream-cover-spf15-mattifying-compact-10-latte-12775602356307.jpg?v=1619106501",
+        productName:"DREAM COVER SPF15 MATTIFYING COMPACT",
+        price:499,
+        rating:4.7, 
+    },
+    {
+        productImage:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_df1e9403-ae9d-430c-8226-622d21c4743d.jpg?v=1640676422",
+        productName:"ARCH ARRIVAL BROW DEFINER",
+        price:499,
+        rating:4.8, 
+    },
+    {
+        productImage:"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-gloss-boss-24hr-eyeliner-01-back-in-black-black-12771395436627_a805d7b4-0863-4ae0-9f15-a2292ae9aa93.jpg?v=1632210594",
+        productName:"GLOSS BOSS 24HR EYELINER-01 BLACK IN BLACK(BLACK)",
+        price:499,
+        rating:4.8, 
+    },
+    {
+        productImage:"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-uptown-curl-lengthening-mascara-01-black-beauty-black-28122637828179.jpg?v=1619106532",
+        productName:"UPTOWN CURL LENGTHENING MACARA-01 BLACK BEAUTY(BLACK)",
+        price:499,
+        rating:4.8, 
+    },
+    {
+        productImage:"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-goddess-of-flawless-spf30-bb-cream-07-vanilla-latte-fair-12796432941139.jpg?v=1619114695",
+        productName:"GODDESS OF FLAWLESS SPF30+ BB CREAM",
+        price:699,
+        rating:4.7, 
+    },
+    {
+        productImage:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_e9355d54-6ddb-4aa4-bdfc-176a676db886.jpg?v=1639983555",
+        productName:"BASE OF GLORY PORE MINIMIZING PRIMER",
+        price:799,
+        rating:4.8, 
+    },
+    {
+        productImage:"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-eye-warned-you-so-double-matte-eyeliner-01-black-swan-black-13954562654291.jpg?v=1619116881",
+        productName:"EYE WARNED YOU SO! DOUBLE MATTE EYELINER",
+        price:699,
+        rating:4.8, 
+    },
+    // {
+    //     productImage:"",
+    //     productName:"",
+    //     price:"",
+    //     rating:"", 
+    // },
+    // {
+    //     productImage:"",
+    //     productName:"",
+    //     price:"",
+    //     rating:"", 
+    // },
+]
+
+var cartData=JSON.parse(localStorage.getItem("cart"))||[];
+
+makeupData.forEach(function(elem){
+    var box=document.createElement("div")
+    box.setAttribute("id","box")
+    var image=document.createElement("img")
+    image.setAttribute("src",elem.productImage)
+    var name=document.createElement("h4")
+    name.innerText=elem.productName
+    var price=document.createElement("p")
+    price.innerText="Rs."+" "+elem.price
+    var rating=document.createElement("p")
+    rating.innerText="Rating -"+" "+elem.rating
+    var cart=document.createElement("button")
+    cart.innerText="ADD TO CART"
+    cart.addEventListener("click",function(){
+        addToCart(elem);
+    })
+
+
+    var wishList=document.createElement("button")
+    wishList.innerText="Wish List"
+    var btnBox=document.createElement("div")
+    var upperBox=document.createElement("div")
+    upperBox.setAttribute("id","info")
+    var lowerBox=document.createElement("div")
+    lowerBox.setAttribute("id","buy")
+    var link=document.createElement("a")
+    link.setAttribute("href",elem.link)
+
+    
+    btnBox.append(wishList,cart)
+    lowerBox.append(btnBox)
+    upperBox.append(name,price,rating)
+    link.append(image)
+    box.append(link,upperBox,lowerBox)
+    
+    document.querySelector("#products").append(box)
+})
+function addToCart(elem){
+cartData.push(elem)
+localStorage.setItem("cart",JSON.stringify(cartData))
+alert("Product added to the Cart !")
+}
+     var loginInfo=JSON.parse(localStorage.getItem("login"))
+    
+    document.querySelector("#searchBar>div:nth-child(3)").innerText=loginInfo.email
+   console.log(loginInfo.email)
+</script>
